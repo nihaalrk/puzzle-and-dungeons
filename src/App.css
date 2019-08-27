@@ -1,33 +1,97 @@
-.App {
+.app {
+  background-color:#dbdbdb;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  z-index:1000;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.header-bar {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+.header-title {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.body-center {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -20%);
+  transform: translate(-50%, -20%);
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.body-center .title {
+  font-size: 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body-center .search-field {
+  padding-top: 10px;
+}
+
+.body-dungeon {
+  width: 1000px;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  padding-top: 20px;
+}
+
+.body-dungeon .title {
+  font-size: 2em;
+  padding-bottom: 15px;
+}
+
+.body-dungeon .sub-info {
+  font-size: 1.1em;
+  padding-top: 10px;
+  line-height: 25px;
+}
+
+.body-dungeon .floors {
+  font-size: 1.1em;
+  padding-top: 30px;
+  line-height: 25px;
+}
+
+.body-dungeon .floors .floor {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.floor .title-cont {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+floor .floor-title {
+  width: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.floor .floor-sub-title {
+  flex-grow: 1;
+  margin: 10px 0px 5px 0px;
+  padding-left: 10px;
+  font-size: 0.95em;
+}
+
+h4 {
+  margin: 10px 0px 5px 0px;
 }
